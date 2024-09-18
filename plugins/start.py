@@ -91,11 +91,11 @@ async def start_command(client: Client, message: Message):
                     ids = [int(int(argument[1]) / abs(client.db_channel.id))]
                 except:
                     return
-            temp_msg = await message.reply("Please wait...")
+            temp_msg = await message.reply("Ruko Lodum 🤓 ...")
             try:
                 messages = await get_messages(client, ids)
             except:
-                await message.reply_text("Something went wrong..!")
+                await message.reply_text("BT Ho Rahi BC..!")
                 return
             await temp_msg.delete()
 
@@ -121,8 +121,15 @@ async def start_command(client: Client, message: Message):
 
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
-                [[InlineKeyboardButton("👽 About Me", callback_data="about"),
-                  InlineKeyboardButton("🔒 Close", callback_data="close")]]
+         [
+                [
+                    InlineKeyboardButton(text="𝖥𝗈𝗅𝗅𝗈𝗐 𝖴𝖲 𝖮𝗇 𝖨𝖭𝖲𝖳𝖠𝖦𝖱𝖠𝖬", url='https://insta.openinapp.co/bwpa4')
+                ],
+                 [
+                    InlineKeyboardButton("𝖠𝖻𝗈𝗎𝗍 𝖠𝖽𝗆𝗂𝗇 🗿", callback_data = "about"),
+                    InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ 🍒", url='https://telegram.dog/ZenottyPremium')
+                ]
+       ]
             )
             await message.reply_text(
                 text=START_MSG.format(
@@ -170,9 +177,11 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(
-                "Join Channel",
-                url = client.invitelink)
+            InlineKeyboardButton(text="𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝟣 🍑", url = client.invitelink),
+            InlineKeyboardButton(text="𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝟤 🍒", url=client.invitelink2),
+        ],
+        [
+            InlineKeyboardButton(text="𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝟥 🎟 ", url=client.invitelink3),
         ]
     ]
     try:
