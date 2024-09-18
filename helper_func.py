@@ -5,7 +5,7 @@ import re
 import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from config import FORCE_SUB_CHANNEL, ADMINS
+from config import FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, ADMINS
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 from shortzy import Shortzy
@@ -18,7 +18,7 @@ from database.database import user_data, db_verify_status, db_update_verify_stat
 #logger.setLevel(logging.INFO)
 
 async def is_subscribed(filter, client, update):
-    if not (FORCE_SUB_CHANNEL or FORCE_SUB_CHANNEL_2 or FORCE_SUB_CHANNEL_3):
+    if not (FORCE_SUB_CHANNEL or FORCE_SUB_CHANNEL2 or FORCE_SUB_CHANNEL3):
         return True
 
     user_id = update.from_user.id
