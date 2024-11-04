@@ -13,35 +13,35 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7515740019:AAGeEYklhL4pgnUTfW7ReLI7BFmswsNRaCs")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "25138082"))
+APP_ID = int(os.environ.get("APP_ID", "22215048"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "f05318b589a4fa1d24649b8a5e687c24")
+API_HASH = os.environ.get("API_HASH", "ed6b5f4819836d31defb5a747a1950ce")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002086434022"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002431384606"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6992533662"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7846069816"))
 
 #Port
-PORT = os.environ.get("PORT", "8089")
+PORT = os.environ.get("PORT", "8034")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://wtflinksofficial:wtflinksofficial@cluster0.e69xg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://wtflinksofficial:wtflinksofficial@cluster0.1vvgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "wtflinksofficial")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "kingurl.in")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "a4f87c9ef2aeae5e49fe9192569ddf5c9a2ebac8")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "modijiurl.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "39d6d8e9bff7ac3b433bac744b8cb63962ef66a9")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","nottyopen/7")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002406213415"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002197047425"))
-FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1002038085913"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002339107487"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002439817292"))
+FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "-1002111272545"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
